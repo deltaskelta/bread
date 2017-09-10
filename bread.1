@@ -1,0 +1,32 @@
+.\" Manpage for bread.
+.\" Contact jrwillette88@gmail.com to correct errors or typos.
+.TH man 8 "08 August 2016" "0.1" "bread man page"
+.SH NAME
+bread - calculate flour and water needed for bread dough
+.SH SYNOPSIS
+bread [-s [starter weight] [starter hydration]] [final hydration goal] [total flour goal] [desired salt content]
+.SH DESCRIPTION
+bread is used for calculating the amount of flour and water needed to make bread dough in different situations, both starting from a starter dough and starting from scratch. 
+
+*Percentages are always expressed as a number. (1% = 1, 50% = 50)
+
+starter weight - this is the weight of the starter dough used, in grams
+
+starter hydration - this is the hydration level of the starter dough which is expressed as a percentage of the total flour in the starter. For example if a starter has 100 grams of flour and 200 grams of water then the hydration would be 200(%) 
+
+final hydration goal - this is the goal for the final hydration of the dough (after starter and everything else is added.
+
+total flour goal - this is the goal of the total amount of flour that will be in the final dough, in grams.
+
+desired salt content - this is the desired salt content of the finished bread, expressed as a percentage of the total amount of flour. For example, if you wanted a bread with 2% salt content and the total desired amount of flour was 500g, then it would require 10g of salt.
+
+.SH OPTIONS
+
+-s [starter weight] [starter hydration] - if you invoke the -s option you need to also supply the weight and the hydration level of the starter dough immediately after the -s option. 
+
+.SH BUGS
+
+No known bugs.
+
+.SH AUTHOR
+Jeff Willette (jrwillette88@gmail.com)
